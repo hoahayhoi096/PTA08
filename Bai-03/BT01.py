@@ -14,10 +14,7 @@
 from fileClass1 import HocSinh
 
 hocSinh1 = HocSinh("Vinh", 13)
-
-
-print(hocSinh1.ten)
-print(hocSinh1.tuoi)
+hocSinh1.ThongTin()
 
 # Phương thức là gì? 
 
