@@ -1,3 +1,9 @@
 class HocSinh:
-    ten = ""
-    tuoi = 0
+    def __init__(self, ten, tuoi):
+        self.ten = ten
+        self.tuoi = tuoi
+
+    
+
+
+

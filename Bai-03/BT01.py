@@ -4,11 +4,36 @@
 
 # Tạo lớp học sinh 
 
+
 # Nhập giá trị cho các thuộc tính của đối tượng học sinh 
 
 # In ra các giá trị của các thuộc tính của đối tượng học sinh
 
 # Viết hàm nhập vào danh sách các học sinh trả về danh sách vừa nhập
+
+from fileClass1 import HocSinh
+
+hocSinh1 = HocSinh("Vinh", 13)
+
+
+print(hocSinh1.ten)
+print(hocSinh1.tuoi)
+
+# Phương thức là gì? 
+
+# Có bao nhiêu loại phương thức trong class? 
+
+#   Phương thức khởi tạo 
+
+#   Phương thức thông thường 
+
+
+# Kế thừa 
+
+
+
+
+
 
 
 # Bài tập 
