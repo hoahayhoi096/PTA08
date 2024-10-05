@@ -21,16 +21,12 @@ import CacHam
 # Đề: Tạo class (Tự nghĩ) , Nhập danh sách các đối tượng (tạo hầm nhập...)
 # , Tạo hàm in danh sách các đối tượng ()
 
-dsXe = CacHam.nhap_danh_sach_xe()
-CacHam.in_danh_sach_xe(dsXe)
+# dsXe = CacHam.nhap_danh_sach_xe()
+# CacHam.in_danh_sach_xe(dsXe)
 
-# Phương thức là gì? 
+dsHocSinh = CacHam.nhap_danh_sach()
+CacHam.in_danh_sach(dsHocSinh)
 
-# Có bao nhiêu loại phương thức trong class? 
-
-#   Phương thức khởi tạo 
-
-#   Phương thức thông thường 
 
 
 # Kế thừa 
