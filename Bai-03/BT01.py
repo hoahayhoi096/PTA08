@@ -12,9 +12,17 @@
 # Viết hàm nhập vào danh sách các học sinh trả về danh sách vừa nhập
 
 from fileClass1 import HocSinh
+from fileclass2 import Xe
+import CacHam
 
-hocSinh1 = HocSinh("Vinh", 13)
-hocSinh1.ThongTin()
+# hocSinh1 = HocSinh("Vinh", 13)
+# hocSinh1.ThongTin()
+
+# Đề: Tạo class (Tự nghĩ) , Nhập danh sách các đối tượng (tạo hầm nhập...)
+# , Tạo hàm in danh sách các đối tượng ()
+
+dsXe = CacHam.nhap_danh_sach_xe()
+CacHam.in_danh_sach_xe(dsXe)
 
 # Phương thức là gì? 
 
