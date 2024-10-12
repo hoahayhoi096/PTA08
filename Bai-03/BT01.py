@@ -31,12 +31,6 @@ CacHam.in_danh_sach(dsHocSinh)
 
 # Kế thừa 
 
-
-
-
-
-
-
 # Bài tập 
 
 # Viết hàm in ra những học sinh có điểm < 5 
