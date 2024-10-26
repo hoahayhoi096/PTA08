@@ -7,18 +7,21 @@
     <x>0</x>
     <y>0</y>
     <width>672</width>
-    <height>377</height>
+    <height>541</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f0ede4;</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label1">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>50</y>
+      <x>90</x>
+      <y>210</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -30,18 +33,21 @@
    <widget class="QTextEdit" name="textEditTaiKhoan">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>50</y>
+      <x>220</x>
+      <y>210</y>
       <width>301</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
    </widget>
    <widget class="QLabel" name="label2">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>130</y>
+      <x>90</x>
+      <y>290</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -53,8 +59,8 @@
    <widget class="QTextEdit" name="textEditMatKhau">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>130</y>
+      <x>220</x>
+      <y>290</y>
       <width>301</width>
       <height>41</height>
      </rect>
@@ -63,14 +69,43 @@
    <widget class="QPushButton" name="pushButtonDangNhap">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>220</y>
+      <x>230</x>
+      <y>380</y>
       <width>121</width>
       <height>51</height>
      </rect>
     </property>
     <property name="text">
      <string>Đăng nhập</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>40</y>
+      <width>211</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../resources/images/PugLogo.jpeg</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonDangKi">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>380</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Đăng kí tài khoản</string>
     </property>
    </widget>
   </widget>
