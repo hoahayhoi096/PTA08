@@ -5,7 +5,7 @@ class ConNguoi:
 
 
 class HocSinh(ConNguoi):
-    def __init__(self, lopHoc, soThich):
+    def __init__(self, ten, tuoi ,lopHoc, soThich):
         super().__init__(ten, tuoi)
         self.lopHoc = lopHoc
         self.soThich = soThich

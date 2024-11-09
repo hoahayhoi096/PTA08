@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>511</width>
+    <height>268</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #daed85;</string>
+  </property>
+  <widget class="QPushButton" name="pushButtonThem">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>230</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Thêm</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonDong">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>230</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Đóng</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEditContent">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>471</width>
+     <height>141</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEditTitle">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
