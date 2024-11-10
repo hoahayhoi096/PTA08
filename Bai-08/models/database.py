@@ -20,3 +20,14 @@ class Database:
     def get_notes(self):
         return self.notes
     
+    def update_note(self, note):
+        for item in self.notes:
+            if item.id == note.id : 
+                item.title = note.title
+                item.content = note.content
+
+    def get_note_by_id(self, note_id):
+        for note in self.notes:
+            if note.id == note_id : 
+                return note
+        return None

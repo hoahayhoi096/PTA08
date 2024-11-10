@@ -1,10 +1,11 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow, QListWidgetItem
-from PyQt6.QtCore import QSize
+from PyQt6.QtCore import QSize, Qt
 import sys
 from PyQt6 import uic 
 import os
 from scripts.NoteItemScr import NoteItem
 from scripts.AddNoteScr import AddNote
+from scripts.NoteDetailScr import NoteDetail
 
 class MainPage(QMainWindow):  
     def __init__(self, controller, database):
@@ -19,6 +20,23 @@ class MainPage(QMainWindow):
         self.load_notes()
         self.AddNoteWindow = AddNote(None, self.database, self.controller)
         self.pushButtonAdd.clicked.connect(self.onPushButtonAdd)
+
+        self.listWidget.itemClicked.connect(self.onItemClicked)
+
+        self.NoteDetailWindow = None
+
+
+    def onItemClicked(self, item):
+        # Lấy id của note từ Item trong list các note
+        note_id = item.data(Qt.ItemDataRole.UserRole)
+        # Tìm note trong database dựa vào id vừa có 
+        note = self.database.get_note_by_id(note_id)
+
+        # Nếu note được tìm thấy (có tồn tại trong database)
+        if note:
+            # Hiển thị thông tin của note lên giao diện 
+            self.NoteDetailWindow = NoteDetail(None, self.controller, self.database, note)
+            self.NoteDetailWindow.show()
 
 
     def onPushButtonAdd(self):
@@ -35,6 +53,9 @@ class MainPage(QMainWindow):
             noteWidget = NoteItem(note)
 
             item = QListWidgetItem(self.listWidget)
+
+            # Gán id của note vào item với nơi lưu trữ là Qt.UserRole 
+            item.setData(Qt.ItemDataRole.UserRole, note.id)
 
             noteWidget.setFixedSize(500, 120)
 

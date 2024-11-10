@@ -17,10 +17,6 @@ class LoginWindow(QMainWindow):
     def on_button_click(self):
         self.show_popup("Clicked!")
 
-        # text = self.text_edit.toPlainText()
-
-        # self.text_edit.setPlainText("Button clicked!")
-
     def show_popup(self, message):
         msg = QMessageBox()
         msg.setWindowTitle("Thông báo")
