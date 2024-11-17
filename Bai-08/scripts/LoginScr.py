@@ -30,6 +30,8 @@ class Login(QMainWindow):
             msgBox.setText("Tài khoản hoặc mật khẩu không hợp lệ!")
             msgBox.exec()
 
+
+
     def onPushButtonDangKi(self):
         self.controller.show_login_page()
         self.hide()
